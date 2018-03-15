@@ -16,8 +16,32 @@
             <a href="contactus.html" id="NavigationBar_a">Contact Us</a>
         </nav>
         
+        <div style="height: 100vh"></div>
+
         <div class="ContactusBox">
-            
+            <form action="contactus_control.php">
+
+                <label for="Name_label">Full name</label>
+                <input type="text" id="Name" name="Name" placeholder="My name is..."><br />
+
+                <label for="Email_label">Email address</label>
+                <input type="text" id="Email" name="Email" placeholder="example@mail.com"><br />
+
+                <label for="Category_label">Category</label>
+                <select id="Category" name="category">
+                    <option value="Courses">Courses</option>
+                    <option value="Enquiry">Enquiry</option>
+                    <option value="Business">Business</option>
+                    <option value="Subscription">Subscription</option>
+                    <option value="Other">Other</option>
+                </select><br /><br />
+                
+                <label for="Message">Message</label><br />
+                <textarea type="text" id="Message" name="Message" placeholder=""></textarea><br /><br />
+
+                <input type="submit" value="Submit">
+
+            </form>
         </div>
         
     </body>
